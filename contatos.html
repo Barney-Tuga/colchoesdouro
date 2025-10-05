@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos - Colchões d'Ouro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Colchões d'Ouro" class="logo-img">
+                    </a>
+                </div>
+                
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">O Que Somos</a></li>
+                        <li><a href="contatos.html" class="active">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overlay para menu mobile -->
+    <div class="overlay"></div>
+    
+    <!-- Banner principal -->
+    <section class="hero">
+        <div class="container">
+            <h2>Entre em Contacto</h2>
+            <p>Estamos aqui para responder a todas as suas perguntas e ajudar a encontrar o colchão perfeito.</p>
+        </div>
+    </section>
+    
+    <!-- Conteúdo de contactos -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Informações de Contacto</h2>
+                    
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Rua do Conforto, 123, 4000-123 Porto</p>
+                        <p><i class="fas fa-phone"></i> +351 223 456 789</p>
+                        <p><i class="fas fa-envelope"></i> info@colchoesdouro.pt</p>
+                        <p><i class="fas fa-clock"></i> Segunda a Sábado: 9h00 - 19h00</p>
+                    </div>
+                    
+                    <h2>Onde Estamos</h2>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3002.69137083306!2d-8.614623624168885!3d41.15787137131511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2465abc4e153c1%3A0xa648d95640b114bc!2sPorto!5e0!3m2!1spt-PT!2spt!4v1694999999999!5m2!1spt-PT!2spt" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Envie-nos uma Mensagem</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Colchões d'Ouro</h3>
+                    <p>A sua loja de confiança para noites de sono perfeitas.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">O Que Somos</a></li>
+                        <li><a href="contatos.html" class="active">Contatos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contactos</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +351 223 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@colchoesdouro.pt</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Siga-nos</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Colchões d'Ouro. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Menu toggle para mobile com overlay
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const nav = document.querySelector('nav ul');
+            const overlay = document.querySelector('.overlay');
+            const body = document.body;
+            
+            if (nav.classList.contains('show')) {
+                // Fechar menu
+                nav.classList.add('hiding');
+                setTimeout(() => {
+                    nav.classList.remove('show', 'hiding');
+                    this.classList.remove('active');
+                    overlay.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }, 300);
+            } else {
+                // Abrir menu
+                this.classList.add('active');
+                nav.classList.add('show');
+                overlay.classList.add('active');
+                body.classList.add('menu-open');
+            }
+        });
+
+        // Fechar menu ao clicar no overlay
+        document.querySelector('.overlay').addEventListener('click', function() {
+            const nav = document.querySelector('nav ul');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const body = document.body;
+            
+            nav.classList.add('hiding');
+            setTimeout(() => {
+                nav.classList.remove('show', 'hiding');
+                menuToggle.classList.remove('active');
+                this.classList.remove('active');
+                body.classList.remove('menu-open');
+            }, 300);
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', function() {
+                const nav = document.querySelector('nav ul');
+                const menuToggle = document.querySelector('.menu-toggle');
+                const overlay = document.querySelector('.overlay');
+                const body = document.body;
+                
+                if (window.innerWidth <= 768) {
+                    nav.classList.add('hiding');
+                    setTimeout(() => {
+                        nav.classList.remove('show', 'hiding');
+                        menuToggle.classList.remove('active');
+                        overlay.classList.remove('active');
+                        body.classList.remove('menu-open');
+                    }, 300);
+                }
+            });
+        });
+
+        // Resetar animações ao redimensionar a janela
+        window.addEventListener('resize', function() {
+            const nav = document.querySelector('nav ul');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const overlay = document.querySelector('.overlay');
+            const body = document.body;
+            
+            if (window.innerWidth > 768) {
+                nav.classList.remove('show', 'hiding');
+                menuToggle.classList.remove('active');
+                overlay.classList.remove('active');
+                body.classList.remove('menu-open');
+            }
+        });
+    </script>
+</body>
+</html>

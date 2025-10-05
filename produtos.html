@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Colchões d'Ouro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Colchões d'Ouro" class="logo-img">
+                    </a>
+                </div>
+                
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html" class="active">Produtos</a></li>
+                        <li><a href="sobre.html">O Que Somos</a></li>
+                        <li><a href="contatos.html">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overlay para menu mobile -->
+    <div class="overlay"></div>
+    
+    <!-- Banner principal -->
+    <section class="hero">
+        <div class="container">
+            <h2>Nossa Coleção de Colchões</h2>
+            <p>Descubra a gama completa de colchões premium para todas as necessidades e preferências.</p>
+        </div>
+    </section>
+    
+    <!-- Filtros -->
+    <section class="filters-section">
+        <div class="container">
+            <div class="filters">
+                <div class="filters-header">
+                    <div class="search-bar">
+                        <input type="text" id="search-input" placeholder="Pesquisar produtos...">
+                        <button id="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <button class="toggle-filters-btn">
+                        <i class="fas fa-filter"></i> Filtros
+                    </button>
+                </div>
+                
+                <div class="filters-content">
+                    <div class="filter-group">
+                        <h3>Tipo de Produto:</h3>
+                        <div class="filter-options">
+                            <label><input type="checkbox" name="category" value="colchao"> Colchão</label>
+                            <label><input type="checkbox" name="category" value="almofada"> Almofada</label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group" id="colchao-size-filters">
+                        <h3>Tamanho do Colchão</h3>
+                        <div class="filter-options">
+                            <label><input type="checkbox" name="colchao-size" value="single"> Solteiro (90cm x 190cm)</label>
+                            <label><input type="checkbox" name="colchao-size" value="double"> Casal (140cm x 190cm)</label>
+                            <label><input type="checkbox" name="colchao-size" value="queen"> Queen (150cm x 190cm)</label>
+                            <label><input type="checkbox" name="colchao-size" value="king"> King (200cm x 180cm)</label>
+                            <label><input type="checkbox" name="colchao-size" value="superking"> Super King (200cm x 200cm)</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group" id="almofada-size-filters">
+                        <h3>Tamanho da Almofada</h3>
+                        <div class="filter-options">
+                            <label><input type="checkbox" name="almofada-size" value="almofada-small"> Pequena (30x15cm)</label>
+                            <label><input type="checkbox" name="almofada-size" value="almofada-large"> Grande (40x20cm)</label>
+                        </div>
+                    </div>
+
+                    <div class="filter-group" id="colchao-filters">
+                        <h3>Tipo de Colchão</h3>
+                        <div class="filter-options">
+                            <label><input type="checkbox" name="colchao-type" value="espuma"> Espuma</label>
+                            <label><input type="checkbox" name="colchao-type" value="molas"> Molas</label>
+                            <label><input type="checkbox" name="colchao-type" value="latex"> Latex</label>
+                            <label><input type="checkbox" name="colchao-type" value="hibrido"> Híbrido</label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Preço</h3>
+                        <div class="price-slider">
+                            <div class="price-inputs">
+                                <input type="number" id="min-price" placeholder="Mín" min="0" max="2000" value="0">
+                                <span>até</span>
+                                <input type="number" id="max-price" placeholder="Máx" min="0" max="2000" value="2000">
+                            </div>
+                            <div class="slider-container">
+                                <div class="slider-track" id="slider-track"></div>
+                                <input type="range" min="0" max="2000" value="0" class="slider" id="min-slider">
+                                <input type="range" min="0" max="2000" value="2000" class="slider" id="max-slider">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Produtos -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Todos os Produtos</h2>
+            </div>
+            
+            <div class="products-grid" id="products-container">
+                <!-- Produto 1 -->
+                <div class="product-card" data-category="almofada" data-size="almofada-large" data-price="899">
+                    <img src="img/almofada01.jpg" alt="Almofada 1" class="product-img">
+                    <div class="product-info">
+                        <h3>Almofada 1</h3>
+                        <p class="product-price">899,00 €</p>
+                        <div class="product-features">
+                            <p>Material: Memória de forma</p>
+                            <p>Nível de firmeza: Médio</p>
+                            <p>Dimensões: 50x70cm</p>
+                        </div>
+                        <div class="product-actions">
+                            <a href="produto01.html" class="btn">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produto 2 -->
+                <div class="product-card" data-category="almofada" data-size="almofada-small" data-price="699">
+                    <img src="img/almofada02.jpg" alt="Almofada 2" class="product-img">
+                    <div class="product-info">
+                        <h3>Almofada 2</h3>
+                        <p class="product-price">699,00 €</p>
+                        <div class="product-features">
+                            <p>Material: Penas naturais</p>
+                            <p>Nível de firmeza: Suave</p>
+                            <p>Dimensões: 60x60cm</p>
+                        </div>
+                        <div class="product-actions">
+                            <a href="produto01.html" class="btn">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produto 3 -->
+                <div class="product-card" data-category="colchao" data-size="queen" data-price="1199" data-type="espuma">
+                    <img src="img/colchao01.jpg" alt="Colchão 1" class="product-img">
+                    <div class="product-info">
+                        <h3>Colchão 1</h3>
+                        <p class="product-price">1.199,00 €</p>
+                        <div class="product-features">
+                            <p>Tipo: Espuma de memória</p>
+                            <p>Nível de firmeza: Médio-firme</p>
+                            <p>Dimensões: 160x200cm</p>
+                        </div>
+                        <div class="product-actions">
+                            <a href="produto01.html" class="btn">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produto 4 -->
+                <div class="product-card" data-category="colchao" data-size="single" data-price="549" data-type="molas">
+                    <img src="img/colchao02.jpg" alt="Colchão 2" class="product-img">
+                    <div class="product-info">
+                        <h3>Colchão 2</h3>
+                        <p class="product-price">549,00 €</p>
+                        <div class="product-features">
+                            <p>Tipo: Molas ensacadas</p>
+                            <p>Nível de firmeza: Firme</p>
+                            <p>Dimensões: 90x200cm</p>
+                        </div>
+                        <div class="product-actions">
+                            <a href="produto01.html" class="btn">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produto 5 -->
+                <div class="product-card" data-category="colchao" data-size="single" data-price="399" data-type="espuma">
+                    <img src="img/colchao03.jpg" alt="Colchão 3" class="product-img">
+                    <div class="product-info">
+                        <h3>Colchão 3</h3>
+                        <p class="product-price">399,00 €</p>
+                        <div class="product-features">
+                            <p>Tipo: Espuma convencional</p>
+                            <p>Nível de firmeza: Suave</p>
+                            <p>Dimensões: 90x190cm</p>
+                        </div>
+                        <div class="product-actions">
+                            <a href="produto01.html" class="btn">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produto 6 -->
+                <div class="product-card" data-category="colchao" data-size="king" data-price="1499" data-type="hibrido">
+                    <img src="img/colchao04.jpg" alt="Colchão 4" class="product-img">
+                    <div class="product-info">
+                        <h3>Colchão 4</h3>
+                        <p class="product-price">1.499,00 €</p>
+                        <div class="product-features">
+                            <p>Tipo: Híbrido (molas + memória)</p>
+                            <p>Nível de firmeza: Ajustável</p>
+                            <p>Dimensões: 180x200cm</p>
+                        </div>
+                        <div class="product-actions">
+                            <a href="produto01.html" class="btn">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produto 7 -->
+                <div class="product-card" data-category="colchao" data-size="double" data-price="799" data-type="latex">
+                    <img src="img/colchao05.jpg" alt="Colchão 5" class="product-img">
+                    <div class="product-info">
+                        <h3>Colchão 5</h3>
+                        <p class="product-price">799,00 €</p>
+                        <div class="product-features">
+                            <p>Tipo: Latex natural</p>
+                            <p>Nível de firmeza: Médio</p>
+                            <p>Dimensões: 140x200cm</p>
+                        </div>
+                        <div class="product-actions">
+                            <a href="produto01.html" class="btn">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produto 8 -->
+                <div class="product-card" data-category="colchao" data-size="king" data-price="1899" data-type="hibrido">
+                    <img src="img/colchao06.jpg" alt="Colchão 6" class="product-img">
+                    <div class="product-info">
+                        <h3>Colchão 6</h3>
+                        <p class="product-price">1.899,00 €</p>
+                        <div class="product-features">
+                            <p>Tipo: Premium com arrefecimento</p>
+                            <p>Nível de firmeza: Firme</p>
+                            <p>Dimensões: 180x200cm</p>
+                        </div>
+                        <div class="product-actions">
+                            <a href="produto01.html" class="btn">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Colchões d'Ouro</h3>
+                    <p>A sua loja de confiança para noites de sono perfeitas.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html" class="active">Produtos</a></li>
+                        <li><a href="sobre.html">O Que Somos</a></li>
+                        <li><a href="contatos.html">Contatos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contactos</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +351 223 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@colchoesdouro.pt</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Siga-nos</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Colchões d'Ouro. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Menu toggle para mobile com overlay
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const nav = document.querySelector('nav ul');
+            const overlay = document.querySelector('.overlay');
+            const body = document.body;
+            
+            if (nav.classList.contains('show')) {
+                // Fechar menu
+                nav.classList.add('hiding');
+                setTimeout(() => {
+                    nav.classList.remove('show', 'hiding');
+                    this.classList.remove('active');
+                    overlay.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }, 300);
+            } else {
+                // Abrir menu
+                this.classList.add('active');
+                nav.classList.add('show');
+                overlay.classList.add('active');
+                body.classList.add('menu-open');
+            }
+        });
+
+        // Fechar menu ao clicar no overlay
+        document.querySelector('.overlay').addEventListener('click', function() {
+            const nav = document.querySelector('nav ul');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const body = document.body;
+            
+            nav.classList.add('hiding');
+            setTimeout(() => {
+                nav.classList.remove('show', 'hiding');
+                menuToggle.classList.remove('active');
+                this.classList.remove('active');
+                body.classList.remove('menu-open');
+            }, 300);
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', function() {
+                const nav = document.querySelector('nav ul');
+                const menuToggle = document.querySelector('.menu-toggle');
+                const overlay = document.querySelector('.overlay');
+                const body = document.body;
+                
+                if (window.innerWidth <= 768) {
+                    nav.classList.add('hiding');
+                    setTimeout(() => {
+                        nav.classList.remove('show', 'hiding');
+                        menuToggle.classList.remove('active');
+                        overlay.classList.remove('active');
+                        body.classList.remove('menu-open');
+                    }, 300);
+                }
+            });
+        });
+
+        // Resetar animações ao redimensionar a janela
+        window.addEventListener('resize', function() {
+            const nav = document.querySelector('nav ul');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const overlay = document.querySelector('.overlay');
+            const body = document.body;
+            
+            if (window.innerWidth > 768) {
+                nav.classList.remove('show', 'hiding');
+                menuToggle.classList.remove('active');
+                overlay.classList.remove('active');
+                body.classList.remove('menu-open');
+            }
+        });
+
+        // Toggle dos filtros
+        document.querySelector('.toggle-filters-btn').addEventListener('click', function() {
+            document.querySelector('.filters').classList.toggle('expanded');
+        });
+
+        // Slider de preço
+        const minSlider = document.getElementById('min-slider');
+        const maxSlider = document.getElementById('max-slider');
+        const minPrice = document.getElementById('min-price');
+        const maxPrice = document.getElementById('max-price');
+        const sliderTrack = document.getElementById('slider-track');
+
+        function updateSlider() {
+            // Garantir que o valor mínimo não seja maior que o máximo
+            if (parseInt(minSlider.value) > parseInt(maxSlider.value)) {
+                minSlider.value = maxSlider.value;
+            }
+            
+            // Atualizar os inputs de texto
+            minPrice.value = minSlider.value;
+            maxPrice.value = maxSlider.value;
+            
+            // Atualizar a barra de progresso
+            const minPercent = (minSlider.value / minSlider.max) * 100;
+            const maxPercent = (maxSlider.value / maxSlider.max) * 100;
+            sliderTrack.style.left = minPercent + '%';
+            sliderTrack.style.width = (maxPercent - minPercent) + '%';
+            
+            // Filtrar produtos quando o slider é movido
+            filterProducts();
+        }
+
+        // Event listeners para os sliders
+        minSlider.addEventListener('input', updateSlider);
+        maxSlider.addEventListener('input', updateSlider);
+
+        // Event listeners para os inputs de texto
+        minPrice.addEventListener('change', function() {
+            minSlider.value = this.value;
+            updateSlider();
+        });
+
+        maxPrice.addEventListener('change', function() {
+            maxSlider.value = this.value;
+            updateSlider();
+        });
+
+        // Inicializar o slider
+        updateSlider();
+
+        // Mostrar/ocultar filtros baseado na seleção da categoria
+        function toggleFilters() {
+            const colchaoCheckbox = document.querySelector('input[name="category"][value="colchao"]');
+            const almofadaCheckbox = document.querySelector('input[name="category"][value="almofada"]');
+            const colchaoFilters = document.getElementById('colchao-filters');
+            const colchaoSizeFilters = document.getElementById('colchao-size-filters');
+            const almofadaSizeFilters = document.getElementById('almofada-size-filters');
+            
+            // Mostrar/ocultar filtros de colchão
+            if (colchaoCheckbox.checked) {
+                colchaoFilters.style.display = 'block';
+                colchaoSizeFilters.style.display = 'block';
+            } else {
+                colchaoFilters.style.display = 'none';
+                colchaoSizeFilters.style.display = 'none';
+            }
+            
+            // Mostrar/ocultar filtros de almofada
+            if (almofadaCheckbox.checked) {
+                almofadaSizeFilters.style.display = 'block';
+            } else {
+                almofadaSizeFilters.style.display = 'none';
+            }
+        }
+
+        // Filtragem de produtos
+        function filterProducts() {
+            const searchTerm = document.getElementById('search-input').value.toLowerCase();
+            const selectedCategories = Array.from(document.querySelectorAll('input[name="category"]:checked')).map(cb => cb.value);
+            const selectedColchaoSizes = Array.from(document.querySelectorAll('input[name="colchao-size"]:checked')).map(cb => cb.value);
+            const selectedAlmofadaSizes = Array.from(document.querySelectorAll('input[name="almofada-size"]:checked')).map(cb => cb.value);
+            const selectedColchaoTypes = Array.from(document.querySelectorAll('input[name="colchao-type"]:checked')).map(cb => cb.value);
+            const minPriceValue = parseInt(minSlider.value);
+            const maxPriceValue = parseInt(maxSlider.value);
+            
+            const products = document.querySelectorAll('.product-card');
+            
+            // Se nenhum filtro de categoria está selecionado, mostrar todos os produtos
+            const hasCategoryFilters = selectedCategories.length > 0;
+            const hasColchaoSizeFilters = selectedColchaoSizes.length > 0;
+            const hasAlmofadaSizeFilters = selectedAlmofadaSizes.length > 0;
+            const hasColchaoTypeFilters = selectedColchaoTypes.length > 0;
+            
+            products.forEach(product => {
+                const productName = product.querySelector('h3').textContent.toLowerCase();
+                const productCategory = product.getAttribute('data-category');
+                const productSize = product.getAttribute('data-size');
+                const productPrice = parseInt(product.getAttribute('data-price'));
+                const productType = product.getAttribute('data-type') || '';
+                
+                const matchesSearch = productName.includes(searchTerm);
+                const matchesPrice = productPrice >= minPriceValue && productPrice <= maxPriceValue;
+                
+                // Verificar categoria
+                const matchesCategory = !hasCategoryFilters || selectedCategories.includes(productCategory);
+                
+                // Verificar tamanhos baseado na categoria
+                let matchesSize = true;
+                if (hasCategoryFilters) {
+                    if (productCategory === 'colchao' && hasColchaoSizeFilters) {
+                        matchesSize = selectedColchaoSizes.includes(productSize);
+                    } else if (productCategory === 'almofada' && hasAlmofadaSizeFilters) {
+                        matchesSize = selectedAlmofadaSizes.includes(productSize);
+                    } else if ((productCategory === 'colchao' && !hasColchaoSizeFilters) || 
+                              (productCategory === 'almofada' && !hasAlmofadaSizeFilters)) {
+                        matchesSize = true;
+                    }
+                }
+                
+                // Para produtos que são colchões, verificar o tipo
+                let matchesColchaoType = true;
+                if (productCategory === 'colchao' && hasColchaoTypeFilters) {
+                    matchesColchaoType = selectedColchaoTypes.some(type => 
+                        productType.toLowerCase().includes(type.toLowerCase())
+                    );
+                }
+                
+                if (matchesSearch && matchesCategory && matchesSize && matchesPrice && matchesColchaoType) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+        // Event listeners para filtros
+        document.getElementById('search-input').addEventListener('input', filterProducts);
+        document.getElementById('search-btn').addEventListener('click', filterProducts);
+        
+        // Adicionar event listeners para todas as checkboxes
+        document.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                // Atualizar visibilidade dos filtros
+                if (this.name === 'category') {
+                    toggleFilters();
+                }
+                filterProducts();
+            });
+        });
+
+        // Filtrar produtos ao carregar a página
+        document.addEventListener('DOMContentLoaded', function() {
+            toggleFilters();
+            filterProducts();
+        });
+    </script>
+</body>
+</html>
