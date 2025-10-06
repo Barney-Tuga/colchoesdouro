@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colchão Premium - Colchões d'Ouro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Colchões d'Ouro" class="logo-img">
+                    </a>
+                </div>
+                
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">O Que Somos</a></li>
+                        <li><a href="contatos.html">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Overlay para menu mobile -->
+    <div class="overlay"></div>
+    
+    <!-- Conteúdo da página do produto -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-content">
+                <!-- Galeria de imagens -->
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img id="main-product-image" src="img/col-02_01.jpg" alt="Colchão Premium">
+                    </div>
+                    <div class="image-thumbnails">
+                        <div class="thumbnail active" data-image="img/col-02_01.jpg">
+                            <img src="img/col-02_01.jpg" alt="Vista frontal">
+                        </div>
+                        <div class="thumbnail" data-image="img/col-02_02.jpg">
+                            <img src="img/col-02_02.jpg" alt="Vista lateral">
+                        </div>
+                        <div class="thumbnail" data-image="img/col-02_03.jpg">
+                            <img src="img/col-02_03.jpg" alt="Detalhe do material">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Informações do produto -->
+                <div class="product-info">
+                    <!-- <div class="product-badge destaque">Destaque</div> -->
+                    <h1>Colchão Brisa</h1>
+                    <div class="product-rating">
+                        <!-- <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div> 
+                        <span class="rating-value">4.5 (128 avaliações)</span> -->
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">1.199,00 €</span>
+                        <!-- <span class="original-price">1.499,00 €</span>
+                        <span class="discount">-20%</span> -->
+                    </div>
+                    
+                    <div class="product-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Colchão fresco e fácil de transporte</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Colchão Viscoelastico Densidade 30</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Fabricado na medida que deseja</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>TEXTO</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Para o site Completo
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label>Tamanho:</label>
+                            <div class="size-options">
+                                <button class="size-option active">Solteiro (90x190cm)</button>
+                                <button class="size-option">Casal (140x190cm)</button>
+                                <button class="size-option">Queen (160x200cm)</button>
+                                <button class="size-option">King (180x200cm)</button>
+                            </div>
+                        </div>
+                        
+                        <div class="option-group">
+                            <label>Firmeza:</label>
+                            <div class="firmness-options">
+                                <button class="firmness-option active">Média</button>
+                                <button class="firmness-option">Firme</button>
+                                <button class="firmness-option">Extra Firme</button>
+                            </div>
+                        </div>
+                        
+                        <div class="option-group">
+                            <label for="quantity">Quantidade:</label>
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                    <div class="product-actions">
+                        <!-- <button class="btn btn-primary add-to-cart">
+                            <i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho
+                        </button> -->
+                        <!-- <button class="btn btn-outline">
+                            <i class="far fa-heart"></i> Adicionar à Lista de Desejos
+                        </button> -->
+                        <button class="btn btn-outline" h>
+                            <i class="fa-regular fa-envelope"></i> Fazer Encomenda
+                        </button>
+                    </div>
+                    
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Entrega gratuita em 2-5 dias úteis</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Garantia de 10 anos</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>Devolução gratuita em 100 dias</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Descrição detalhada do produto -->
+            <div class="product-description">
+                <div class="description-tabs">
+                    <button class="tab-btn active" data-tab="description">Descrição</button>
+                    <button class="tab-btn" data-tab="specifications">Especificações</button>
+                    <!-- <button class="tab-btn" data-tab="reviews">Avaliações</button> -->
+                    <button class="tab-btn" data-tab="shipping">Entrega & Devoluções</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description">
+                        <h2>Conforto e Suporte Excepcionais</h2>
+                        <p>O Colchão Premium Conforto Máximo foi desenvolvido com a mais avançada tecnologia em espuma de memória, proporcionando o equilíbrio perfeito entre conforto e suporte ortopédico. Ideal para quem sofre de dores nas costas ou simplesmente busca uma noite de sono revitalizante.</p>
+                        
+                        <h3>Características Principais:</h3>
+                        <ul>
+                            <li><strong>Tecnologia de Arrefecimento Gel:</strong> Camada superior infundida com gel que dissipa o calor corporal, mantendo uma temperatura ideal durante toda a noite.</li>
+                            <li><strong>Suporte Ortopédico:</strong> Zonas de conforto diferenciadas que oferecem suporte específico para os ombros, ancas e região lombar.</li>
+                            <li><strong>Material Hypoallergenic:</strong> Proteção natural contra ácaros, fungos e bactérias, ideal para pessoas com alergias.</li>
+                            <li><strong>Base Respirável:</strong> Estrutura que permite a circulação de ar, evitando a acumulação de humidade.</li>
+                        </ul>
+                        
+                        <h3>Benefícios para a Saúde:</h3>
+                        <p>Dormir no Colchão Premium pode ajudar a reduzir dores nas costas, melhorar a circulação sanguínea e promover um sono mais profundo e reparador. A sua tecnologia de adaptação ao corpo distribui uniformemente o peso, aliviando pontos de pressão e prevenindo o desconforto matinal.</p>
+                    </div>
+                    
+                    <div class="tab-pane" id="specifications">
+                        <table class="specs-table">
+                            <tr>
+                                <th>Dimensões</th>
+                                <td>160cm x 200cm x 25cm</td>
+                            </tr>
+                            <tr>
+                                <th>Peso</th>
+                                <td>35kg</td>
+                            </tr>
+                            <tr>
+                                <th>Material da Capa</th>
+                                <td>Jersey Tencel com tecnologia antibacteriana</td>
+                            </tr>
+                            <tr>
+                                <th>Núcleo</th>
+                                <td>Espuma de memória viscoelástica de alta densidade</td>
+                            </tr>
+                            <tr>
+                                <th>Camadas</th>
+                                <td>5 camadas de conforto diferenciado</td>
+                            </tr>
+                            <tr>
+                                <th>Firmeza</th>
+                                <td>Média-Firme (6.5/10)</td>
+                            </tr>
+                            <tr>
+                                <th>Garantia</th>
+                                <td>10 anos</td>
+                            </tr>
+                            <tr>
+                                <th>Origem</th>
+                                <td>Fabricado em Portugal</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="tab-pane" id="reviews">
+                        <div class="reviews-summary">
+                            <div class="overall-rating">
+                                <div class="rating-score">4.5</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="total-reviews">Baseado em 128 avaliações</div>
+                            </div>
+                            <div class="rating-bars">
+                                <div class="rating-bar">
+                                    <span>5 estrelas</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 70%;"></div>
+                                    </div>
+                                    <span>70%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>4 estrelas</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 20%;"></div>
+                                    </div>
+                                    <span>20%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>3 estrelas</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 7%;"></div>
+                                    </div>
+                                    <span>7%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>2 estrelas</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 2%;"></div>
+                                    </div>
+                                    <span>2%</span>
+                                </div>
+                                <div class="rating-bar">
+                                    <span>1 estrela</span>
+                                    <div class="bar">
+                                        <div class="fill" style="width: 1%;"></div>
+                                    </div>
+                                    <span>1%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="reviews-list">
+                            <div class="review">
+                                <div class="review-header">
+                                    <div class="reviewer">Maria Silva</div>
+                                    <div class="review-date">15 Março, 2024</div>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="review-title">Melhor compra do ano!</div>
+                                <div class="review-content">
+                                    <p>Comprei este colchão há 3 meses e a diferença na qualidade do meu sono é incrível. As minhas dores nas costas desapareceram completamente. Recomendo a todos!</p>
+                                </div>
+                            </div>
+                            
+                            <div class="review">
+                                <div class="review-header">
+                                    <div class="reviewer">João Santos</div>
+                                    <div class="review-date">2 Março, 2024</div>
+                                </div>
+                                <div class="review-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="review-title">Muito confortável</div>
+                                <div class="review-content">
+                                    <p>O colchão é realmente muito confortável e de boa qualidade. A única razão pela qual não dei 5 estrelas é porque demorou um pouco mais do que o esperado para chegar.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="shipping">
+                        <h3>Opções de Entrega</h3>
+                        <ul>
+                            <li><strong>Entrega Standard:</strong> Grátis (2-5 dias úteis)</li>
+                            <li><strong>Entrega Express:</strong> 9,99€ (1-2 dias úteis)</li>
+                            <li><strong>Entrega no Mesmo Dia:</strong> 19,99€ (disponível em algumas áreas)</li>
+                        </ul>
+                        
+                        <h3>Montagem</h3>
+                        <p>Oferecemos serviço de montagem por 49,99€. O nosso técnico irá à sua casa montar o colchão e retirar a embalagem.</p>
+                        
+                        <h3>Política de Devoluções</h3>
+                        <p>Temos uma política de devolução gratuita de 100 dias. Se não ficar satisfeito com o seu colchão, podemos recolhê-lo gratuitamente e reembolsar o valor total.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Produtos relacionados -->
+            <section class="related-products">
+                <div class="section-title">
+                    <h2>Produtos Relacionados</h2>
+                </div>
+                
+                <div class="products-grid">
+                    <div class="product-card" data-category="colchao" data-size="queen" data-price="899" data-type="espuma">
+                        <div class="product-badge destaque">Destaque</div>
+                        <img src="img/colchao01.jpg" alt="Colchão Confort Plus" class="product-img">
+                        <div class="product-info">
+                            <h3>Colchão Confort Plus</h3>
+                            <p class="product-price">
+                                <span class="current-price">899,00 €</span>
+                                <span class="original-price">1.099,00 €</span>
+                            </p>
+                            <div class="product-features">
+                                <p>Tipo: Espuma de alta resiliência</p>
+                                <p>Nível de firmeza: Médio</p>
+                            </div>
+                            <div class="product-actions">
+                                <a href="produto02.html" class="btn">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="almofada" data-size="almofada-large" data-price="129">
+                        <img src="img/almofada01.jpg" alt="Almofada Ortopédica" class="product-img">
+                        <div class="product-info">
+                            <h3>Almofada Ortopédica</h3>
+                            <p class="product-price">129,00 €</p>
+                            <div class="product-features">
+                                <p>Material: Memória de forma</p>
+                                <p>Suporte cervical</p>
+                            </div>
+                            <div class="product-actions">
+                                <a href="produto03.html" class="btn">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="colchao" data-size="king" data-price="1599" data-type="hibrido">
+                        <div class="product-badge destaque">Destaque</div>
+                        <img src="img/colchao01.jpg" alt="Colchão Luxury Hybrid" class="product-img">
+                        <div class="product-info">
+                            <h3>Colchão Luxury Hybrid</h3>
+                            <p class="product-price">1.599,00 €</p>
+                            <div class="product-features">
+                                <p>Tipo: Híbrido (molas + memória)</p>
+                                <p>Nível de firmeza: Ajustável</p>
+                            </div>
+                            <div class="product-actions">
+                                <a href="produto04.html" class="btn">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card" data-category="almofada" data-size="almofada-small" data-price="79">
+                        <img src="img/almofada01.jpg" alt="Almofada Conforto" class="product-img">
+                        <div class="product-info">
+                            <h3>Almofada Conforto</h3>
+                            <p class="product-price">79,00 €</p>
+                            <div class="product-features">
+                                <p>Material: Penas naturais</p>
+                                <p>Nível de firmeza: Suave</p>
+                            </div>
+                            <div class="product-actions">
+                                <a href="produto05.html" class="btn">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Colchões d'Ouro</h3>
+                    <p>A sua loja de confiança para noites de sono perfeitas.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html" >Início</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="sobre.html">O Que Somos</a></li>
+                        <li><a href="contatos.html">Contatos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contactos</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +351 223 456 789</li>
+                        <li><i class="fas fa-envelope"></i> info@colchoesdouro.pt</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Siga-nos</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Colchões d'Ouro. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Menu toggle para mobile com overlay
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            const nav = document.querySelector('nav ul');
+            const overlay = document.querySelector('.overlay');
+            const body = document.body;
+            
+            if (nav.classList.contains('show')) {
+                // Fechar menu
+                nav.classList.add('hiding');
+                setTimeout(() => {
+                    nav.classList.remove('show', 'hiding');
+                    this.classList.remove('active');
+                    overlay.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }, 300);
+            } else {
+                // Abrir menu
+                this.classList.add('active');
+                nav.classList.add('show');
+                overlay.classList.add('active');
+                body.classList.add('menu-open');
+            }
+        });
+
+        // Fechar menu ao clicar no overlay
+        document.querySelector('.overlay').addEventListener('click', function() {
+            const nav = document.querySelector('nav ul');
+            const menuToggle = document.querySelector('.menu-toggle');
+            const body = document.body;
+            
+            nav.classList.add('hiding');
+            setTimeout(() => {
+                nav.classList.remove('show', 'hiding');
+                menuToggle.classList.remove('active');
+                this.classList.remove('active');
+                body.classList.remove('menu-open');
+            }, 300);
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', function() {
+                const nav = document.querySelector('nav ul');
+                const menuToggle = document.querySelector('.menu-toggle');
+                const overlay = document.querySelector('.overlay');
+                const body = document.body;
+                
+                if (window.innerWidth <= 768) {
+                    nav.classList.add('hiding');
+                    setTimeout(() => {
+                        nav.classList.remove('show', 'hiding');
+                        menuToggle.classList.remove('active');
+                        overlay.classList.remove('active');
+                        body.classList.remove('menu-open');
+                    }, 300);
+                }
+            });
+        });
+
+        // Galeria de imagens
+        document.querySelectorAll('.thumbnail').forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                // Remover classe active de todas as miniaturas
+                document.querySelectorAll('.thumbnail').forEach(t => {
+                    t.classList.remove('active');
+                });
+                
+                // Adicionar classe active à miniatura clicada
+                this.classList.add('active');
+                
+                // Atualizar imagem principal
+                const mainImage = document.getElementById('main-product-image');
+                mainImage.src = this.getAttribute('data-image');
+            });
+        });
+
+        // Tabs de descrição
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remover classe active de todos os botões e painéis
+                document.querySelectorAll('.tab-btn').forEach(b => {
+                    b.classList.remove('active');
+                });
+                document.querySelectorAll('.tab-pane').forEach(p => {
+                    p.classList.remove('active');
+                });
+                
+                // Adicionar classe active ao botão clicado
+                this.classList.add('active');
+                
+                // Mostrar o painel correspondente
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+
+        // Seletor de quantidade
+        document.querySelector('.quantity-btn.minus').addEventListener('click', function() {
+            const quantityInput = document.getElementById('quantity');
+            if (quantityInput.value > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        });
+
+        document.querySelector('.quantity-btn.plus').addEventListener('click', function() {
+            const quantityInput = document.getElementById('quantity');
+            if (quantityInput.value < 10) {
+                quantityInput.value = parseInt(quantityInput.value) + 1;
+            }
+        });
+
+        // Seletor de tamanho
+        document.querySelectorAll('.size-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.size-option').forEach(o => {
+                    o.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+
+        // Seletor de firmeza
+        document.querySelectorAll('.firmness-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.firmness-option').forEach(o => {
+                    o.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+
+        // Adicionar ao carrinho
+        document.querySelector('.add-to-cart').addEventListener('click', function() {
+            const productName = document.querySelector('.product-info h1').textContent;
+            const quantity = document.getElementById('quantity').value;
+            
+            // Aqui você pode adicionar a lógica para adicionar ao carrinho
+            alert(`Adicionado ${quantity} "${productName}" ao carrinho!`);
+            
+            // Animação de confirmação
+            this.innerHTML = '<i class="fas fa-check"></i> Adicionado ao Carrinho';
+            this.style.backgroundColor = '#28a745';
+            
+            setTimeout(() => {
+                this.innerHTML = '<i class="fas fa-shopping-cart"></i> Adicionar ao Carrinho';
+                this.style.backgroundColor = '';
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
